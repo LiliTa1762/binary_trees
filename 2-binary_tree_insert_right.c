@@ -19,6 +19,8 @@ binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 		return (NULL);
 
 	newnode_right->n = value;
+	newnode_right->left = NULL;
+	newnode_right->right = NULL;
 	newnode_right->parent = parent;
 
 	/* Insert first level */
