@@ -51,6 +51,9 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 	int i = to_find_depth(tree);
 
+	if (tree == NULL)
+		return (0);
+
 	return (bt_perfect(tree, i, 0));
 
 }
